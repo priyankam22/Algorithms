@@ -14,16 +14,20 @@ def bubblesort(arr):
     Average case: O(n^2) (input is not sorted)
     Worst case:   O(n^2) (input is in reverse order)
     
-    '''
-    swap = True
-    
+    '''  
     # Loop till there are zero swaps in a complete pass
-    while swap:
-        swap = False
-        for i in range(len(arr)-1):
-            if arr[i] > arr[i+1]:
+    swap = True
+    n=len(arr)
+    # Make n passes to sort n elements
+    for i in range(n):
+        if swap == False:
+            break
+        swap = False #intialize before each pass
+        # Last i elements are already sorted
+        for j in range(n-i-1):
+            if arr[j] > arr[j+1]:
                 #Swap the adjacent elements if they are not in order
-                arr[i], arr[i+1] = arr[i+1], arr[i]
+                arr[j], arr[j+1] = arr[j+1], arr[j]
                 swap = True
     return arr
 

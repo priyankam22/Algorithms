@@ -1,13 +1,3 @@
-
-# coding: utf-8
-
-# ## Bubble sort
-# 
-# First try
-
-# In[15]:
-
-
 def bubblesort(arr):
     '''
     Implementation of bubblesort
@@ -41,4 +31,3 @@ if __name__ == '__main__':
     user_input = input('Enter a list of numbers separated by space:\n').strip()
     unsorted = [int(num) for num in user_input.split()]
     print(bubblesort(unsorted))
-

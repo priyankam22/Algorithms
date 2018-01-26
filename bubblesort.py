@@ -2,7 +2,7 @@ def bubblesort(arr):
     '''
     Implementation of bubblesort
     
-    params: arr is a list of integers
+    params: arr is a list of numbers
     returns: a sorted list
     
     example: 
